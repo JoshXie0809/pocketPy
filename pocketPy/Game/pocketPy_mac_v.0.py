@@ -1,12 +1,15 @@
 import pygame
 import sys
 
-pygame.init()
-screen = pygame.display.set_mode((480, 360))
 path = '/Users/xiezhengqi/Desktop/GitHub/pocketPy/pocketPy/Game'
+
+pygame.init()
+screenSize = (480, 360)
+screen = pygame.display.set_mode(screenSize)
+
+pygame.display.set_caption('pocketPy mac v 0.0')
 iconImg = pygame.image.load(path + "/icon.png")
 pygame.display.set_icon(iconImg)
-pygame.display.set_caption('pocketPy mac v 0.0')
 
 
 running = True
