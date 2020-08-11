@@ -43,7 +43,7 @@ playerImg = pygame.transform.scale(pygame.image.load(path + '/control_player/pik
 
 def player():
     global playerImg
-    screen.blit(playerImg, playerImgSize)
+    screen.blit(playerImg, (0, 360 - playerImg.get_height()+2))
 
 
 ######################################################################################################
@@ -59,7 +59,6 @@ while not done:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 running = 1
-
         if event.type == pygame.QUIT:
             done = False
             pygame.quit()
@@ -71,6 +70,6 @@ while not done:
 
     # gaming loop
     if running == 1:
-        screen.fill((255, 255, 255))
+        screen.fill((0, 0, 0))
         player()
     pygame.display.update()
