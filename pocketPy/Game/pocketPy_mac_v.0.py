@@ -1,39 +1,58 @@
+from typing import Optional, Any
+
 import pygame
 import sys
-import numpy as np
 
 path = '/Users/xiezhengqi/Desktop/GitHub/pocketPy/pocketPy/Game'
 
 pygame.init()
 screenSize = (480, 360)
-clock = pygame.time.Clock()
-pygame.display.set_caption('pocketPy mac v 0.0')
+pygame.display.set_caption('pocketPy mac ver0.0')
 screen = pygame.display.set_mode(screenSize)
-screen.fill((0, 0, 0))
-pygame.display.update()
+clock = pygame.time.Clock()
 
 
-def start(event):
-    font = pygame.font.SysFont("comicsansms", 25)
-    text = font.render("Pressed Enter to Go", True, (255, 255, 255))
-    screen.blit(text, ((screenSize[0] - text.get_width()) // 2, 5/3*(screenSize[1] - text.get_height()) // 2))
+# start function
+startImg = pygame.image.load(path + '/start.png')
+startImgPlace = ((screenSize[0] - startImg.get_width()) // 2, 40)
+startSpace1 = 0
+startSpace2 = (startSpace1 // 25) % 6
+font = pygame.font.SysFont("comicsansms", 25)
+startText = font.render("Pressed" + startSpace2 * " " + "~SPACE~" + (6 - startSpace2) * " " + "to Go", True, (0, 0, 0))
+startTextPlace = ((screenSize[0] - startText.get_width()) // 2, 5/3*(screenSize[1] - startText.get_height()) // 2)
+
+def start():
+    global startImg, startSpace1, startSpace2, startImgPlace, startText, startTextPlace
+    startSpace1 = (startSpace1 + 1) % 150
+    startSpace2 = (startSpace1 // 25) % 6
+    startText = font.render("Pressed" + startSpace2 * " " + "~SPACE~" + (6 - startSpace2) * " " + "to Go", True, (0, 0, 0))
+    screen.blit(startImg, startImgPlace)
+    screen.blit(startText, startTextPlace)
     pygame.display.update()
-    if event.type == pygame.KEYDOWN:
-        if event.key == pygame.K
-
 
 
 done = False
-running = False
+running = 0
 
 while not done:
-    screen.fill((0, 0, 0))
     for event in pygame.event.get():
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_SPACE:
+                running = 1
+
         if event.type == pygame.QUIT:
-            running = False
+            done = False
             pygame.quit()
             sys.exit()
+    # start page
+    if running == 0:
+        screen.fill((255, 255, 255))
+        start()
+
+    # gaming loop
+    if running == 1:
+        screen.fill((0, 0, 0))
     pygame.display.update()
-    start(event)
+
 
 
