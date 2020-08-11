@@ -1,8 +1,8 @@
 import pygame
 import sys
 
-path = '/Users/xiezhengqi/Desktop/GitHub/pocketPy/pocketPy/Game'
-
+# path = '/Users/xiezhengqi/Desktop/GitHub/pocketPy/pocketPy/Game'
+path = '.'
 iconImg = pygame.image.load(path + '/ball.png')
 pygame.display.set_icon(iconImg)
 pygame.init()
@@ -72,5 +72,4 @@ while not done:
     if running == 1:
         screen.fill((0, 0, 0))
         player()
-    print(1)
     pygame.display.update()
