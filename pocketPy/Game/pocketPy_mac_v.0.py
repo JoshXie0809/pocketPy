@@ -8,7 +8,7 @@ screenSize = (480, 360)
 screen = pygame.display.set_mode(screenSize)
 
 pygame.display.set_caption('pocketPy mac v 0.0')
-iconImg = pygame.image.load(path + "/icon.png")
+iconImg = pygame.transform.scale(pygame.image.load(path + "/icon.png"), (32, 32))
 pygame.display.set_icon(iconImg)
 
 
