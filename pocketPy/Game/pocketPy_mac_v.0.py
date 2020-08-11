@@ -72,4 +72,5 @@ while not done:
     if running == 1:
         screen.fill((0, 0, 0))
         player()
+    print(1)
     pygame.display.update()
