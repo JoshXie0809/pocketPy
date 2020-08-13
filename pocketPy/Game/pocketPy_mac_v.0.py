@@ -3,7 +3,7 @@ import sys
 
 # path = '/Users/xiezhengqi/Desktop/GitHub/pocketPy/pocketPy/Game'
 path = '.'
-iconImg = pygame.image.load(path + '/ball.png')
+iconImg = pygame.transform.scale(pygame.image.load(path + '/ball.png'), (24, 24))
 pygame.display.set_icon(iconImg)
 pygame.init()
 pygame.display.set_caption('pocketPy mac ver0.0')
@@ -55,6 +55,7 @@ done = False
 running = 0
 
 while not done:
+    clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
