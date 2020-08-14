@@ -18,7 +18,7 @@ startImg = pygame.image.load(path + '/start.png')
 startImgPlace = ((screenSize[0] - startImg.get_width()) // 2, 40)
 startSpace1 = 0
 startSpace2 = (startSpace1 // 25) % 6
-font = pygame.font.SysFont("comicsansms", 25)
+font = pygame.font.SysFont("comicsansms", 24)
 startText = font.render("Pressed" + startSpace2 * " " + "~SPACE~" + (6 - startSpace2) * " " + "to Go", True, (0, 0, 0))
 startTextPlace = ((screenSize[0] - startText.get_width()) // 2, 5 / 3 * (screenSize[1] - startText.get_height()) // 2)
 
