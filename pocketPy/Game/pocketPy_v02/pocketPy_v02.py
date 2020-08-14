@@ -9,7 +9,7 @@ from Start import Start
 localPath = os.path.abspath('../')
 print('\n' + localPath)
 
-iconImg = pygame.transform.scale(pygame.image.load(localPath + '/ball.png'), (27, 27))
+iconImg = pygame.transform.scale(pygame.image.load(localPath + '/ball.png'), (32, 32))
 pygame.display.set_icon(iconImg)
 pygame.display.set_caption('pocketPy v0.2')
 pygame.init()
