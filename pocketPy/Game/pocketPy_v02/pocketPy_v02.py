@@ -6,7 +6,7 @@ import os
 
 from pocketPy_v02_ToolBox.Start import Start
 
-localPath = os.path.abspath('./')
+localPath = os.path.abspath('../')
 print('\n' + localPath)
 
 iconImg = pygame.transform.scale(pygame.image.load(localPath + '/ball.png'), (27, 27))
