@@ -1,0 +1,32 @@
+{
+    "Index": {
+        "0": "Player Name",
+        "1": "Player Life",
+        "2": "Player Speed",
+        "3": "Player Money",
+        "4": "Player Monster",
+        "5": "Player Position X",
+        "6": "Player Position Y",
+        "7": "Player Direction",
+        "8": "Player PreDirection",
+        "9": "Player Move"
+    },
+    "Value": {
+        "0": "Josh",
+        "1": 100,
+        "2": 1,
+        "3": 1000,
+        "4": {
+            "Monster 1": {
+                "Monster ATK": 1000,
+                "Monster Life": 30,
+                "Name": "Pykachu"
+            }
+        },
+        "5": 240,
+        "6": 180,
+        "7": "up",
+        "8": "up",
+        "9": 5
+    }
+}

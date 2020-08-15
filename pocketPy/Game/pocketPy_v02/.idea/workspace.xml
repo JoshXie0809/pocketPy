@@ -37,6 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,8 +46,8 @@
       <recent name="C:\Users\777\Documents\GitHub\pocketPy\pocketPy\Game\pocketPy_v02\Image" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pocketPy_v02">
-    <configuration name="pocketPy_v02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.aa_pocketPy_v02">
+    <configuration name="aa_pocketPy_v02" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pocketPy_v02" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,7 +59,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pocketPy_v02.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\777\Documents\GitHub\pocketPy\pocketPy\Game\pocketPy_v02\aa_pocketPy_v02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -67,7 +68,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="try" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="try" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pocketPy_v02" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,12 +89,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.pocketPy_v02" />
-        <item itemvalue="Python.try" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -122,21 +117,25 @@
       <screen x="0" y="0" width="1360" height="738" />
     </state>
     <state x="0" y="100" key="#Inspections/0.0.1360.738@0.0.1360.738" timestamp="1597462248390" />
-    <state width="1302" height="284" key="GridCell.Tab.0.bottom" timestamp="1597464032610">
+    <state x="445" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597472527691">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
-    <state width="1302" height="284" key="GridCell.Tab.0.bottom/0.0.1360.738@0.0.1360.738" timestamp="1597464032610" />
-    <state width="1302" height="284" key="GridCell.Tab.0.center" timestamp="1597464032610">
+    <state x="445" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.738@0.0.1360.738" timestamp="1597472527691" />
+    <state width="1302" height="202" key="GridCell.Tab.0.bottom" timestamp="1597480596718">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
-    <state width="1302" height="284" key="GridCell.Tab.0.center/0.0.1360.738@0.0.1360.738" timestamp="1597464032610" />
-    <state width="1302" height="284" key="GridCell.Tab.0.left" timestamp="1597464032610">
+    <state width="1302" height="202" key="GridCell.Tab.0.bottom/0.0.1360.738@0.0.1360.738" timestamp="1597480596718" />
+    <state width="1302" height="202" key="GridCell.Tab.0.center" timestamp="1597480596717">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
-    <state width="1302" height="284" key="GridCell.Tab.0.left/0.0.1360.738@0.0.1360.738" timestamp="1597464032610" />
-    <state width="1302" height="284" key="GridCell.Tab.0.right" timestamp="1597464032610">
+    <state width="1302" height="202" key="GridCell.Tab.0.center/0.0.1360.738@0.0.1360.738" timestamp="1597480596717" />
+    <state width="1302" height="202" key="GridCell.Tab.0.left" timestamp="1597480596717">
       <screen x="0" y="0" width="1360" height="738" />
     </state>
-    <state width="1302" height="284" key="GridCell.Tab.0.right/0.0.1360.738@0.0.1360.738" timestamp="1597464032610" />
+    <state width="1302" height="202" key="GridCell.Tab.0.left/0.0.1360.738@0.0.1360.738" timestamp="1597480596717" />
+    <state width="1302" height="202" key="GridCell.Tab.0.right" timestamp="1597480596718">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state width="1302" height="202" key="GridCell.Tab.0.right/0.0.1360.738@0.0.1360.738" timestamp="1597480596718" />
   </component>
 </project>
