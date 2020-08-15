@@ -1,6 +1,7 @@
 import pygame
-import sys
 import os
+import numpy as np
+import pandas as pd
 
 from Start import Start
 from Playing import Playing
@@ -22,6 +23,7 @@ clock = pygame.time.Clock()
 screenSize = (480, 360)
 screen = pygame.display.set_mode(screenSize)
 
+playerData =None
 running = True
 stage = 0
 # while loop
@@ -33,18 +35,19 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-            print(f"End time : {runningTime} sec")
+            print(f'!!!!End!!!!\nEnd time : {runningTime} sec')
 
     if stage == 0:
         screen.fill((255, 255, 255))
         stage = Start(localPath + '/image/start/start.png', event, screen, font, runningTime=runningTime,
                       screenSize=screenSize, imgSize=(200, 200), startFontSize=fontSize)
     if stage == 1:
-        screen.fill((0, 0, 0))
-        stage = Playing()
+        screen.fill((255, 255, 255))
+        stage, playerData = Playing(localPath)
 
     pygame.display.update()
 # while loop
 
+print(playerData)
 pygame.font.quit()
 pygame.quit()
