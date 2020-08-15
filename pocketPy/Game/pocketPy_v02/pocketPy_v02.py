@@ -1,15 +1,15 @@
 import pygame
 import sys
-import numpy as np
-import pandas as pd
 import os
 
 from Start import Start
+from Playing import Playing
 
-localPath = os.path.abspath('../')
+
+localPath = os.path.abspath('./')
 print('\n' + localPath)
 
-iconImg = pygame.transform.scale(pygame.image.load(localPath + '/ball.png'), (32, 32))
+iconImg = pygame.transform.scale(pygame.image.load(localPath + '/image/setting/ball.png'), (32, 32))
 pygame.display.set_icon(iconImg)
 pygame.display.set_caption('pocketPy v0.2')
 pygame.init()
@@ -37,10 +37,11 @@ while running:
 
     if stage == 0:
         screen.fill((255, 255, 255))
-        stage = Start(localPath + '/start.png', event, screen, font, runningTime=runningTime,
+        stage = Start(localPath + '/image/start/start.png', event, screen, font, runningTime=runningTime,
                       screenSize=screenSize, imgSize=(200, 200), startFontSize=fontSize)
     if stage == 1:
         screen.fill((0, 0, 0))
+        stage = Playing()
 
     pygame.display.update()
 # while loop
